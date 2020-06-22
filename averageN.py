@@ -1,15 +1,15 @@
 #Ask to input how much notes need to do average, then introduce notes and finally do the average.
 
 def media():
-  num = int(input("¿ Cuantas notas has de medir ? "))
-  notas = 0
+  num_notas = int(input("¿ Cuantas notas vas has de medir ? "))
+  total_notas = 0
   
-  for x in range(1, num+1):
+  for x in range(1, num_notas+1):
     numbers = float(input(f"Introduce la nota {x}: "))
-    notas += numbers
+    total_notas += numbers
     print(f"nota {x}: ", numbers)
     
-  avg = notas / num
+  avg = total_notas / num_notas
   print("La media de tus notas es: ", avg)
 
 media()
